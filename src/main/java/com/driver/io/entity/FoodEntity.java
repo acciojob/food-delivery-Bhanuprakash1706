@@ -1,5 +1,11 @@
 package com.driver.io.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -8,6 +14,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity(name = "foods")
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class FoodEntity{
 	@Id
 	@GeneratedValue
